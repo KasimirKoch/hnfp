@@ -1,6 +1,6 @@
 {
   "name": "hnFrontPage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tool to determine if an article is on the front page of HN",
   "bin": {
     "hnfp": "server.js"

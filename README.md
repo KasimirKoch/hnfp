@@ -6,7 +6,7 @@ it's been there.
 
 ##Installation
 
-hnFrontPage is installable via npm and depends on [Node.js](http://nodejs.org/).
+hnFrontPage is installable via [npm](https://www.npmjs.org/) and depends on [Node.js](http://nodejs.org/).
 ```
 $ npm install -g hnfp
 ```
@@ -37,16 +37,17 @@ and you'd get the following outputs initially, then every 5 minutes thereafter:
 ```
 ----------------------------------------
 Thu Oct 16 2014 19:21:12 GMT-0700 (PDT)
+"YOUR TITLE HERE", by: YOU
 Not on the front page yet! Good luck :)
 ----------------------------------------
 ```
 
 ```
-----------------------------------------
-Thu Oct 16 2014 19:21:12 GMT-0700 (PDT)
-Congratulations!
-You've been on the front page for X hours and Y minutes and Z seconds.
-----------------------------------------
+------------------------------------------------------------
+Thu Oct 16 2014 20:46:13 GMT-0700 (PDT)
+"YOUR TITLE HERE", by: YOU
+On the front page for 0 hours, 5 minutes, and 59 seconds.
+------------------------------------------------------------
 ```
 
 ##Authors

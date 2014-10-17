@@ -87,6 +87,7 @@ function responder(bool){
     lastMomentOnFP = null;
     console.log('------------------------------------------------------------');
     console.log(currentTime);
+    console.log('\"' + title + '\", by: ' + author);
     console.log('Not on the front page yet! Good luck :)');
     if(streak !== 0){
       console.log('Longest Streak:' + streakHours + ' hours, ' + 
