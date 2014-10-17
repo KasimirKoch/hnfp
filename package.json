@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/KiaFathi/hnFrontPage",
   "dependencies": {
-    "express": "^4.9.7"
+    "moment": "^2.8.3",
+    "request": "^2.45.0"
   }
 }
