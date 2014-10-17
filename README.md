@@ -1,5 +1,5 @@
-hnfp
-===========
+hnfp - Hacker News Front Page
+================================
 
 A tool to determine if an article is on the front page of HN, and for how long
 it's been there.
