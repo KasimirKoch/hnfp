@@ -24,14 +24,14 @@ Step 2. Get your story's unique ID by clicking "discuss", and getting it from th
 Step 3. Enter the following in the command line:
 
 ```
-$ hnfp [your ID here]
+$ hnfp [your ID here] [polling frequency in minutes]
 ```
 
-So, if you're trying to check the Hacker News API article shown above, you would type:
+So, if you're trying to check the Hacker News API article shown above every 5 minutes, you would type:
 ```
-$ hnfp 8422599
+$ hnfp 8422599 5
 ```
-and you'd get the following possible outputs:
+and you'd get the following outputs initially, then every 5 minutes thereafter:
 ```
 ----------------------------------------
 Thu Oct 16 2014 19:21:12 GMT-0700 (PDT)
@@ -43,12 +43,9 @@ Not on the front page yet! Good luck :)
 ----------------------------------------
 Thu Oct 16 2014 19:21:12 GMT-0700 (PDT)
 Congratulations!
-You've been on the front page for X seconds/minutes/hours/days
+You've been on the front page for X hours and Y minutes and Z seconds.
 ----------------------------------------
 ```
-
-After this initial output, the hnfp program will continue running, logging an
-updated message every 5 minutes.
 
 ##Authors
 [Kia Fathi](http://github.com/kiafathi)
