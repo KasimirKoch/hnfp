@@ -78,3 +78,7 @@ closing your terminal window will reset the counter.
 
 ##License
 Licensed under the MIT License.
+
+##Changelog
+*0.0.1 Initial Release
+*0.0.2 Update Documentation for Clarity
