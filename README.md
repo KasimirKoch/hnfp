@@ -1,8 +1,12 @@
 hnfp
 ===========
 
-A tool to determine if an article is on the front page of HN, and for how long
-it's been there.
+A tool that determines if an article is on the front page of HN, and lets you measure
+how long it's been there for.
+
+** Due to limitations in the Hacker News API, hnfp will only let you measure how
+long an article has been on the front page from the time you've started running
+the tool. **
 
 ##Table of Contents:
 1. [Installation](#installation)
@@ -56,6 +60,9 @@ Thu Oct 16 2014 20:46:13 GMT-0700 (PDT)
 On the front page for 0 hours, 5 minutes, and 59 seconds.
 ------------------------------------------------------------
 ```
+
+Step 4. Leave hnfp running for as long as you want to measure. Please note that
+closing your terminal window will reset the counter.
 
 ##Future Goals
 
