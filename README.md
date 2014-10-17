@@ -4,6 +4,13 @@ hnFrontPage
 A tool to determine if an article is on the front page of HN, and for how long
 it's been there.
 
+##Table of Contents:
+1. [Installation](#installation)
+1. [Usage](#usage)
+1. [Future Goals](#future-goals)
+1. [Authors](#authors)
+1. [License](#license)
+
 ##Installation
 
 hnFrontPage is installable via [npm](https://www.npmjs.org/) and depends on [Node.js](http://nodejs.org/).
@@ -49,6 +56,13 @@ Thu Oct 16 2014 20:46:13 GMT-0700 (PDT)
 On the front page for 0 hours, 5 minutes, and 59 seconds.
 ------------------------------------------------------------
 ```
+
+##Future Goals
+
+1. Track upvotes
+1. Track number of comments
+1. Show top comments
+1. Track changes in position on front page
 
 ##Authors
 [Kia Fathi](http://github.com/kiafathi)
