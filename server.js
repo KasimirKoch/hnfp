@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 if(!process.argv[2]){
-  throw "Please enter a Hacker News ID";
+  throw 'Please enter a Hacker News ID';
 }
 if(!process.argv[3]){
-  throw "Please enter a polling frequency";
+  throw 'Please enter a polling frequency';
 }
-// Requirements
+// Dependencies
 var request = require('request');
 var moment = require('moment');
 
-// Input from console
+// User input from console
 var articleID = parseInt(process.argv[2]);
 var pollingFrequency = parseInt(process.argv[3]) * 60000;
 
@@ -26,7 +26,7 @@ console.log('Tracking ID: ', articleID);
 getArticleInfo(articleID);
 setInterval(checkFrontPage, pollingFrequency);
 
-// Gets initial data on the article
+// Get initial data on the article
 function getArticleInfo(id){
   request('https://hacker-news.firebaseio.com/v0/item/' + id + '.json?print=pretty', 
     function(err, res, body){
@@ -57,7 +57,7 @@ function checkFrontPage(){
   );
 }
 
-// Response based on whether article is on front page or not
+// Respond based on whether article is on front page or not
 function responder(bool){
   var currentTime = new Date();
   if(bool){
@@ -76,9 +76,11 @@ function responder(bool){
     console.log('------------------------------------------------------------');
     console.log(currentTime);
     console.log('\"' + title + '\", by: ' + author);
-    console.log("On the front page for " + hours + " hours, " + mins + " minutes, and " + seconds + " seconds.");
+    console.log('On the front page for ' + hours + ' hours, ' + 
+      mins + ' minutes, and ' + seconds + ' seconds.');
     if(streak !== d && streak !== 0){
-      console.log("Longest Streak:" + streakHours + " hours, " + streakMins + " minutes, and " + streakSeconds + " seconds.");
+      console.log('Longest Streak:' + streakHours + ' hours, ' + 
+        streakMins + ' minutes, and ' + streakSeconds + ' seconds.');
     }
     console.log('------------------------------------------------------------');
   } else {
@@ -87,9 +89,9 @@ function responder(bool){
     console.log(currentTime);
     console.log('Not on the front page yet! Good luck :)');
     if(streak !== 0){
-      console.log("Longest Streak:" + streakHours + " hours, " + streakMins + " minutes, and " + streakSeconds + " seconds.");
+      console.log('Longest Streak:' + streakHours + ' hours, ' + 
+        streakMins + ' minutes, and ' + streakSeconds + ' seconds.');
     }
     console.log('------------------------------------------------------------');
   } 
 }
-
