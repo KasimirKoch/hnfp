@@ -19,8 +19,10 @@ $ npm uninstall -g hnfp
 ##Usage
 
 Step 1. Submit your story to Hacker News via the [website](https://news.ycombinator.com/submit)
+
 Step 2. Get your story's unique ID by clicking "discuss", and getting it from the url.
 ![Hacker News unique ID](./img/ID.jpg)
+
 Step 3. Enter the following in the command line:
 
 ```
