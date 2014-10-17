@@ -69,6 +69,7 @@ closing your terminal window will reset the counter.
 1. Track upvotes
 1. Track number of comments
 1. Show top comments
+1. Correctly use Firebase API for realtime data
 1. Track changes in position on front page
 
 ##Authors
